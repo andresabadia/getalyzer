@@ -10,11 +10,11 @@
   },
   "dependencies": {
     "@elysiajs/cors": "^1.0.2",
-    "better-sqlite3": "^11.0.0",
     "drizzle-orm": "^0.31.2",
     "elysia": "latest"
   },
   "devDependencies": {
+    "better-sqlite3": "^11.0.0",
     "bun-types": "latest",
     "drizzle-kit": "^0.22.7"
   },
