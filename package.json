@@ -3,13 +3,20 @@
   "version": "1.0.50",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "bun run --watch src/index.ts"
+    "dev": "bun run --watch src/index.ts",
+    "docker:build": "docker build -t andresabadia/getalyzer:0.0.1 .",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate"
   },
   "dependencies": {
+    "@elysiajs/cors": "^1.0.2",
+    "better-sqlite3": "^11.0.0",
+    "drizzle-orm": "^0.31.2",
     "elysia": "latest"
   },
   "devDependencies": {
-    "bun-types": "latest"
+    "bun-types": "latest",
+    "drizzle-kit": "^0.22.7"
   },
   "module": "src/index.js"
 }
